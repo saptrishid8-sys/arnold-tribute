@@ -33,7 +33,9 @@
             width: 100%;
             background: #ffffff;
             border-radius: 36px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 8px 20px -8px rgba(0, 0, 0, 0.15);
+            box-shadow:
+                0 25px 50px -12px rgba(0, 0, 0, 0.25),
+                0 8px 20px -8px rgba(0, 0, 0, 0.15);
             overflow: hidden;
         }
 
@@ -44,6 +46,7 @@
             min-height: 540px;
         }
 
+        /* ---------- IMAGE SIDE ---------- */
         .image-section {
             flex: 1.1;
             background: #1e2a36;
@@ -60,6 +63,7 @@
             display: block;
         }
 
+        /* ---------- CONTENT SIDE ---------- */
         .content-section {
             flex: 1;
             padding: 2.8rem 2.5rem;
@@ -158,6 +162,7 @@
             flex-shrink: 0;
         }
 
+        /* ---------- RESPONSIVE ---------- */
         @media (max-width: 780px) {
             .card-inner {
                 flex-direction: column;
@@ -209,27 +214,33 @@
 <body>
     <div class="card">
         <div class="card-inner">
+
+            <!-- ---------- IMAGE ---------- -->
             <div class="image-section">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Arnold_Schwarzenegger_2003_%28cropped%29.jpg/800px-Arnold_Schwarzenegger_2003_%28cropped%29.jpg"
-                    alt="Arnold Schwarzenegger portrait, 2003" loading="lazy">
+                <img src="arnold.jpg" alt="Arnold Schwarzenegger" />
             </div>
+
+            <!-- ---------- CONTENT ---------- -->
             <div class="content-section">
                 <div class="title-tag">The Austrian Oak · Legend</div>
                 <h1>Arnold Schwarzenegger</h1>
                 <div class="subhead">Bodybuilder · Actor · Governor</div>
+
                 <div class="description">
                     <p>
-                        <strong>Arnold Alois Schwarzenegger</strong> (born July 30, 1947) is an Austrian-American
-                        actor, bodybuilder, and former politician. He is widely regarded as the greatest
-                        bodybuilder of all time and a cultural icon of the 20th century.
+                        <strong>Arnold Alois Schwarzenegger</strong> (born July 30, 1947) is an
+                        Austrian-American actor, bodybuilder, and former politician. He is widely
+                        regarded as the greatest bodybuilder of all time and a cultural icon of
+                        the 20th century.
                     </p>
                     <p>
-                        He won the <strong>Mr. Olympia</strong> title seven times (1970–1975, 1980) and
-                        starred in blockbuster films such as <em>The Terminator</em>, <em>Predator</em>,
-                        <em>Conan the Barbarian</em>, and <em>True Lies</em>. From 2003 to 2011, he served
-                        as the 38th Governor of California.
+                        He won the <strong>Mr. Olympia</strong> title seven times (1970–1975, 1980)
+                        and starred in blockbuster films such as <em>The Terminator</em>,
+                        <em>Predator</em>, <em>Conan the Barbarian</em>, and <em>True Lies</em>.
+                        From 2003 to 2011, he served as the 38th Governor of California.
                     </p>
                 </div>
+
                 <div class="stats">
                     <div class="stat-item">
                         <span class="stat-label">Born</span>
@@ -248,14 +259,16 @@
                         <span class="stat-value">38th (CA)</span>
                     </div>
                 </div>
+
                 <div class="footer-note">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>
-                    <span>Static tribute — ready for GitHub Pages</span>
+                    <span>Static tribute — live on GitHub Pages</span>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
